@@ -544,6 +544,17 @@ body {
   .monetization-grid {
     grid-template-columns: 1fr;
   }
+  .nav-pill {
+    padding: 4px 8px;
+    gap: 3px;
+    max-width: calc(100vw - 24px);
+    overflow-x: auto;
+  }
+  .nav-link {
+    padding: 6px 11px;
+    font-size: 11.5px;
+    white-space: nowrap;
+  }
 }
 
 .monetization-item {
