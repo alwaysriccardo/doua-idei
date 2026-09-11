@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <title>Două Idei de Business — Riccardo & Daniel</title>
+  <meta name="description" content="Prezentare strategică confidențială: Platformă AI Medicală (MedGemma) și Analizor Psihologic AI pentru conversații sociale.">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Două Idei de Business — Riccardo & Daniel">
+  <meta property="og:description" content="Analiză strategică și oportunități de piață: MedTech AI B2B și Chat AI Analytics.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop">
+  <meta name="theme-color" content="#06070a">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Particle Canvas & Luminous Orbs -->
+  <canvas id="ambient-canvas"></canvas>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <div class="app-container">
+
+    <!-- Floating Navigation Pill -->
+    <nav class="floating-nav">
+      <div class="nav-pill">
+        <a href="#intro" class="nav-link active">Intro</a>
+        <a href="#medgemma" class="nav-link pill-med">01 MedTech</a>
+        <a href="#chat-ai" class="nav-link pill-chat">02 Chat AI</a>
+        <a href="#concluzie" class="nav-link">Plan</a>
+      </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header id="intro" class="hero-header reveal active">
+      <div class="tag-badge">
+        <span class="badge-pulse"></span>
+        Prezentare Confidențială
+      </div>
+      <h1 class="hero-title">
+        Două Concepte <br>
+        <span class="grad-text">De Business Cu AI</span>
+      </h1>
+      <p class="hero-subtitle">
+        Daniel, am structurat aceste două oportunități tehnologice majore pe care le analizez. 
+        Ambele au potențial de scalare rapidă, adresând piețe cu cerere uriașă și competiție locală aproape inexistentă.
+      </p>
+      <div class="meta-strip">
+        <span>📅 Septembrie 2026</span>
+        <span>📍 Focus România & Europa</span>
+        <span>⚡ Tehnologii AI Generative</span>
+      </div>
+    </header>
+
+    <!-- IDEA 01: MEDGEMMA MEDICAL AI -->
+    <section id="medgemma" class="glass-card card-med reveal">
+      <div class="card-header-flex">
+        <div class="idea-number-badge num-med">01</div>
+        <span class="status-pill status-med">B2B SaaS / MedTech</span>
+      </div>
+
+      <h2 class="card-title title-med">Platformă AI pentru Citirea Scanărilor Medicale</h2>
+      <p class="card-tagline">Inteligență clinică la nivel de radiolog specialist — pentru orice clinică și spital.</p>
+
+      <div class="card-description">
+        <p>
+          Ideea centrală este construirea unei platforme web B2B de elită construite pe baza 
+          <strong>Google MedGemma</strong> — modelul de inteligență artificială open multimodal dezvoltat 
+          special pentru domeniul medical și imagistică avansată.
+        </p>
+        <p>
+          Platforma rezolvă două probleme fundamentale: 
+          <strong>1) Asistență în timp real pentru medici</strong> (creșterea vitezei de diagnosticare pentru RMN, CT, radiografii cu un „second opinion” instant) și 
+          <strong>2) Modul interactiv de training</strong> pentru medici rezidenți, radiologi la început de drum și universități medicale.
+        </p>
+      </div>
+
+      <!-- Feature Badges -->
+      <div class="tag-container">
+        <span class="tech-tag">🧠 Google MedGemma</span>
+        <span class="tech-tag">🔬 RMN, CT & Radiografii</span>
+        <span class="tech-tag">⏱️ Triaj & Citire Instant</span>
+        <span class="tech-tag">🎓 Simulator Rezidențiat</span>
+        <span class="tech-tag">🔒 Arhitectură GDPR / HIPAA</span>
+      </div>
+
+      <!-- Live Interactive Demo 1 -->
+      <div class="interactive-demo">
+        <div class="demo-header">
+          <span class="demo-badge">● Simulare Interactivă MedGemma</span>
+          <button id="run-scan-btn" class="demo-btn">
+            <span>⚡</span> Scanează RMN
+          </button>
+        </div>
+        <div class="scanner-viewport">
+          <div id="scan-beam" class="scan-beam"></div>
+          <div class="scan-target">
+            <span style="font-size:24px; margin-bottom:4px;">🦴</span>
+            <span>RMN LOMBAR</span>
+            <div id="scan-box" class="scan-box">Hernie L4-L5</div>
+          </div>
+        </div>
+        <div class="scan-result-panel">
+          <span id="scan-result-text">Apasă pe buton pentru a simula detecția patologiilor în timp real.</span>
+        </div>
+      </div>
+
+      <!-- Highlighted Insights -->
+      <div class="insights-box">
+        <h4 style="color: var(--cyan);">De Ce Este o Oportunitate Masivă</h4>
+        <ul>
+          <li><strong>Piață deja validată:</strong> Start-up-ul <em>ReadYourLab.com</em> (fondat de un medic din Ungaria) demonstrează viabilitatea conceptului și disponibilitatea clienților de a plăti.</li>
+          <li><strong>Oportunitate „First-Mover” în România & Europa:</strong> Cu excepția câtorva inițiative izolate, piața din Europa Centrală și de Est este virgină pe acest segment de asistență software.</li>
+          <li><strong>Criză acută de personal:</strong> Deficitul de radiologi la nivel european creează liste lungi de așteptare. AI-ul nu înlocuiește medicul, ci îi sporește productivitatea cu 300%.</li>
+          <li><strong>Model open-source:</strong> MedGemma reduce bariera costurilor inițiale de cercetare și oferă o bază solidă de acuratețe medicală.</li>
+        </ul>
+      </div>
+
+      <!-- Market Advantage -->
+      <div class="market-banner">
+        <div class="market-icon">🇷🇴</div>
+        <div class="market-text">
+          <strong>Avantajul strategic local:</strong> Digitalizarea clinicilor private din România este în plină expansiune. Un parteneriat inițial cu 2-3 rețele private de sănătate oferă tracțiune imediată și validare pentru extinderea regională.
+        </div>
+      </div>
+
+      <!-- Monetization Grid -->
+      <h4 style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: var(--cyan); margin-bottom: 12px;">Modele de Monetizare</h4>
+      <div class="monetization-grid">
+        <div class="monetization-item">
+          <div class="m-icon">🏥</div>
+          <div class="m-title">SaaS B2B Clinici</div>
+          <div class="m-desc">Abonament lunar recurent (500€ - 3.000€/lună) per clinică sau spital.</div>
+        </div>
+        <div class="monetization-item">
+          <div class="m-icon">🎯</div>
+          <div class="m-title">Pay-per-Scan</div>
+          <div class="m-desc">Taxare la volum pentru cabinete individuale și medici independenți.</div>
+        </div>
+        <div class="monetization-item">
+          <div class="m-icon">🎓</div>
+          <div class="m-title">Licențe Educaționale</div>
+          <div class="m-desc">Pachete pentru universități de medicină și societăți de rezidențiat.</div>
+        </div>
+        <div class="monetization-item">
+          <div class="m-icon">🔌</div>
+          <div class="m-title">API & Integrări PACS</div>
+          <div class="m-desc">Conectare directă în software-ul existent al spitalelor.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IDEA 02: CHAT AI ANALYZER -->
+    <section id="chat-ai" class="glass-card card-chat reveal">
+      <div class="card-header-flex">
+        <div class="idea-number-badge num-chat">02</div>
+        <span class="status-pill status-chat">B2C Viral / Psihologie AI</span>
+      </div>
+
+      <h2 class="card-title title-chat">Analizor AI de Conversații Sociale</h2>
+      <p class="card-tagline">Descoperă psihologia ascunsă, compatibilitatea și dinamica oricărei relații din mesaje.</p>
+
+      <div class="card-description">
+        <p>
+          Utilizatorii își pot descărca arhiva de mesaje (fișiere <strong>.json</strong> exportate din 
+          Instagram, WhatsApp, Telegram sau Messenger) și le pot încărca pe platformă pentru o analiză 
+          emoțională și psihologică profundă.
+        </p>
+        <p>
+          Deși modelele LLM au capacitatea de a citi date conversaționale brute, publicul larg nu știe cum să facă asta. 
+          Produsul împachetează această tehnologie într-o interfață fermecătoare ce extrage 
+          <strong>scoruri de compatibilitate de cuplu</strong>, <strong>arhetipuri de personalitate</strong> (Jungian / Big Five), 
+          <strong>stiluri de atașament</strong> și semnale de alarmă (red flags).
+        </p>
+      </div>
+
+      <!-- Feature Badges -->
+      <div class="tag-container">
+        <span class="tech-tag">💬 Instagram & WhatsApp JSON</span>
+        <span class="tech-tag">❤️ Compatibilitate de Cuplu</span>
+        <span class="tech-tag">🔮 Arhetipuri de Personalitate</span>
+        <span class="tech-tag">🚩 Detectare Red Flags & Toxicitate</span>
+        <span class="tech-tag">📈 Evoluția Sentimentului în Timp</span>
+      </div>
+
+      <!-- Live Interactive Demo 2 -->
+      <div class="interactive-demo">
+        <div class="demo-header">
+          <span class="demo-badge" style="color: var(--rose);">● Simulare Analiză Conversație</span>
+          <button id="run-chat-btn" class="demo-btn btn-chat">
+            <span>✨</span> Rulează Analiză AI
+          </button>
+        </div>
+
+        <div class="chat-window">
+          <div class="chat-bubble bubble-received">
+            „Mă gândeam la ce ai zis ieri... chiar ai dreptate, trebuie să încercăm abordarea aia.”
+          </div>
+          <div class="chat-bubble bubble-sent">
+            „Știam eu că o să vezi potențialul! Hai să ne apucăm de mâine 💪”
+          </div>
+        </div>
+
+        <div id="chat-ai-result" class="chat-ai-result">
+          <div class="ai-stat-row">
+            <span>Compatibilitate Relațională</span>
+            <span style="color: #fb7185;">94% (Rezonanță Mare)</span>
+          </div>
+          <div class="ai-stat-row">
+            <span>Arhetip Dominant</span>
+            <span style="color: #c084fc;">Vizionarul Strategic</span>
+          </div>
+          <div class="ai-stat-row">
+            <span>Stil de Atașament</span>
+            <span style="color: #38bdf8;">Securizant & Colaborativ</span>
+          </div>
+          <div class="ai-stat-row">
+            <span>Index Red Flags</span>
+            <span style="color: #4ade80;">0% (Tipar Sănătos)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Highlighted Insights -->
+      <div class="insights-box">
+        <h4 style="color: var(--rose);">De Ce Este un Motor de Creștere Viral</h4>
+        <ul>
+          <li><strong>Curiozitate umană nativă:</strong> Oamenii sunt obsedați să știe ce cred alții despre ei și dacă relația lor funcționează.</li>
+          <li><strong>Efect organic de rețea (TikTok & Instagram):</strong> Utilizatorii vor distribui capturi cu rapoartele lor de compatibilitate și arhetip pe Story, aducând valuri de noi utilizatori organici la cost zero de achiziție.</li>
+          <li><strong>Scalabilitate globală imediată:</strong> Formatul JSON exportat de Instagram/WhatsApp este standardizat internațional. Produsul funcționează instant în orice limbă.</li>
+          <li><strong>Marjă de profit uriașă:</strong> Costul unei interogări API pentru analiza text este de câțiva cenți, în timp ce raportul premium se vinde cu 9€ - 19€.</li>
+        </ul>
+      </div>
+
+      <!-- Market Advantage -->
+      <div class="market-banner" style="background: rgba(244, 63, 94, 0.06); border-color: rgba(244, 63, 94, 0.2);">
+        <div class="market-icon">🚀</div>
+        <div class="market-text" style="color: #fecdd3;">
+          <strong style="color: var(--rose);">Modelul „Spotify Wrapped” pentru relații:</strong> Fiecare analiză devine un activ vizual pe care oamenii abia așteaptă să-l arate prietenilor sau partenerului.
+        </div>
+      </div>
+
+      <!-- Monetization Grid -->
+      <h4 style="font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: var(--rose); margin-bottom: 12px;">Modele de Monetizare</h4>
+      <div class="monetization-grid">
+        <div class="monetization-item">
+          <div class="m-icon">⚡</div>
+          <div class="m-title">Freemium Hook</div>
+          <div class="m-desc">Scor general gratuit; raportul complet de 15 pagini deblocat contra-cost.</div>
+        </div>
+        <div class="monetization-item">
+          <div class="m-icon">💎</div>
+          <div class="m-title">Raport Premium (9.99€)</div>
+          <div class="m-desc">Analiză psiho-relațională aprofundată, cronologie emoțională și recomandări.</div>
+        </div>
+        <div class="monetization-item">
+          <div class="m-icon">🔄</div>
+          <div class="m-title">Abonament Relațional</div>
+          <div class="m-desc">Monitorizare periodică și comparație trimestrială a sănătății comunicării.</div>
+        </div>
+        <div class="monetization-item">
+          <div class="m-icon">🛋️</div>
+          <div class="m-title">Tool B2B pentru Terapeuți</div>
+          <div class="m-desc">Tablou de bord pentru psihologi și consilieri de cuplu.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON & NEXT STEPS -->
+    <section id="concluzie" class="cta-card reveal">
+      <div class="cta-signature">Riccardo & Daniel</div>
+      <p class="cta-desc">
+        Daniel, ambele direcții valorifică puterea AI-ului într-un mod inedit. 
+        Prima idee (MedGemma) are o valoare B2B enterprise mare și barieră ridicată la intrare. 
+        A doua idee (Chat AI) oferă viteză fulgerătoare de lansare și tracțiune virală instantanee. 
+        <br><br>
+        Hai să povestim și să alegem unghiul pe care vrem să apăsăm pedala!
+      </p>
+
+      <a href="https://wa.me/?text=Salut%20Riccardo!%20Am%20analizat%20cele%20doua%20idei%20de%20business%20din%20prezentare.%20Hai%20sa%20vorbim!" target="_blank" class="btn-whatsapp">
+        <span>💬</span> Răspunde-i lui Riccardo pe WhatsApp
+      </a>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
